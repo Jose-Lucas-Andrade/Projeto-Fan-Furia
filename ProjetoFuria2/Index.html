@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil de Fã - FURIA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Conheça Seu Perfil FURIA</h1>
+    <form id="fanForm">
+      <label>Nome:
+        <input type="text" name="nome" required />
+      </label>
+      <label>Idade:
+        <input type="number" name="idade" required />
+      </label>
+      <label>Cidade:
+        <input type="text" name="cidade" required />
+      </label>
+      <label>Jogador Favorito:
+        <select name="jogador">
+          <option value="KSCERATO">KSCERATO</option>
+          <option value="yuurih">yuurih</option>
+          <option value="chelo">chelo</option>
+          <option value="arT">arT</option>
+        </select>
+      </label>
+      <label>Rede Social que mais acompanha:
+        <select name="rede">
+          <option value="Instagram">Instagram</option>
+          <option value="Twitter">Twitter</option>
+          <option value="YouTube">YouTube</option>
+          <option value="TikTok">TikTok</option>
+        </select>
+      </label>
+      <label>Nível de Envolvimento:
+        <select name="envolvimento">
+          <option value="casual">Casual</option>
+          <option value="moderado">Moderado</option>
+          <option value="hardcore">Hardcore</option>
+        </select>
+      </label>
+      <button type="submit">Gerar Meu Perfil</button>
+    </form>
+
+    <div id="loading" class="hidden" style="text-align:center; margin-top:20px;">
+      <p>🌀 Carregando seu perfil FÚRIOSO...</p>
+    </div>
+
+    <div id="perfil" class="hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
